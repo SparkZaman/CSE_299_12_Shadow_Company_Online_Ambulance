@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>User</title>
+  </head>
+
+  <style>
+    #MAP {
+      width: 60%;
+      height: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc; }
+
+   .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 40px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center; }
+
+   .request { 
+      background-color: #06060698;color: rgb(41, 241, 255); }
+
+   .textBox {
+      width: 300px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s; }
+   
+   .box1:focus {
+      border-color: #007bff; }  
+      
+   .profileButton {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+    
+    .profilePic {
+      width: 90%;
+      height: 100%;
+      object-fit: cover; }
+</style>
+
+<body>
+  <center>
+    <input type="text" class="textBox" placeholder="Pick-up location :"><!THIS TEXTBOX WILL SHOW THE CURRENT LOCATION BY REAL-TIME TRACKING>
+
+    <div id = "MAP"><!..MAPworks..><!...HERE WE WILL SET REAL TIME LOCATION TRACKER...></div>
+
+    <input type="text" class="textBox" placeholder="Choose destination :"><!THIS TEXTBOX WILL TAKE THE DROP LOCCATION MANUALLY>
+    
+    <button class="button request">Request<!...THIS BUTTON WILL ASSIST THE USER TO TRACK THE WHOLE PROCESS...></button>
+
+    <div class="profileButton">
+    <img class="profilePic" src="image/logo.png" alt="Profile Image">
+    </center><!...BY CLICKING THIS BUTTON USER CAN VISIT THEIR OWN PROFILE...>
+</body>
+
+</html>
