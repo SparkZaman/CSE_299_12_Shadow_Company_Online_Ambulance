@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_3.css"> 
+    <title>Hospital Sign-up</title>
+</head>
+
+<body>
+    <img src="Images/medilift logo.png" class="hello1" alt="Medilift Logo">
+    <img src="Images/hospitalicon1.png" class="hello03" alt="Hospital Icon">
+    
+    <div class="home-button">
+        <a href="index.html" class="black-button">Index</a>
+    </div>
+
+    <div class="main-content">
+        <p class="toptext">Already Registered? <a href="hospital_login.html" class="active-link">Login</a></p>
+    </div>
+    
+    <form action="hospital_signup.php" method="post">
+        <div class="nextButton">
+            <div class="leftContainer">
+                <input type="text" class="textbox" id="hospital_name" name="hospital_name" placeholder="Enter hospital name" required>
+                <input type="email" class="textbox" id="email" name="email" placeholder="Enter email" required>
+                <input type="password" class="textbox" id="password" name="password" placeholder="Enter password" required>
+                <input type="password" class="textbox" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+            </div>
+
+            <div class="rightContainer">  
+                <input type="text" class="textbox" id="admin_name" name="admin_name" placeholder="Enter administrator name" required>
+                <input type="text" class="textbox" id="address" name="address" placeholder="Enter address" required>
+                <input type="text" class="textbox" id="hospital_contact" name="hospital_contact" placeholder="Enter hospital contact" required>
+                <input type="text" class="textbox" id="available" name="available" placeholder="Are you in service?" required>
+            </div>
+            
+            <input type="submit" class="black-button08" value="Signup">
+        </div>
+    </form>
+    
+    <h1 class="hospitaltoplogo"><center>Hospital Sign-up</center></h1>
+    <h2 class="hospitallogo"><center>HOSPITAL</center></h2>
+
+    <div class="footer">
+        <div class="copyright">
+            &copy; Shadow Company 2023. All rights reserved.
+        </div>
+        <div class "terms">
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+    </div>
+</body>
+</html>

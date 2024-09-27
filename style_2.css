@@ -1,0 +1,470 @@
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 50vh; /* Set the height to fill the viewport */
+  background: linear-gradient(to right, black 50%, white 50%); /* Create a gradient background */
+}
+
+.split-background {
+  display: flex; /* Enable flex layout for the background */
+  height: 100%; /* Fill the viewport height */
+}
+
+/* Style the left half of the background */
+.left-half {
+  flex: 1; /* Take up half of the available space */
+  background-color: black; /* Background color for the left half */
+  position: relative; /* Relative positioning for child elements */
+}
+
+/* Style the right half of the background */
+.right-half {
+  flex: 1; /* Take up half of the available space */
+  background-color: white; /* Background color for the right half */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+}
+
+/* Style the container for copyright and terms */
+.copyright-terms-container {
+  position: absolute; /* Position the container absolutely */
+  bottom: 10px; /* 10px from the bottom */
+  left: 170px; /* Align to the left edge of the left half */
+  right: 20; /* Align to the right edge of the left half */
+  display: flex; /* Enable flex layout for child elements */
+  justify-content: center; /* Center child elements horizontally */
+}
+
+/* Style the copyright text */
+.copyright {
+  color: #fff; /* Text color for the copyright */
+  font-size: 17px; /* Adjust the font size as needed */
+  margin-right: 20px; /* Add spacing between copyright and terms */
+}
+
+/* Style the terms and conditions link */
+.terms a {
+  color:blue; /* Link color */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Make the link bold */
+}
+
+.centered-content {
+  position: absolute;
+  top: 30%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+
+/* Style the "Welcome to" logo */
+.logo {
+  color: white; /* Text color for the logo */
+  font-size: 48px; /* Adjust the font size as needed */
+  max-width: 80%;
+  left: -87px;
+  top: 292px;
+  position: relative;
+}
+
+
+.logo2{
+  position: relative;
+  top:155px;
+  max-width: 80%;
+  left: 150px;
+}
+
+/* Style the button container */
+.button-container {
+  margin-bottom: 35px;
+  height: 300px;
+  text-align: center;
+}
+
+/* Style the buttons */
+.button {
+  display: flex;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.black-button {
+  background-color: black;
+}
+
+/* Style the buttons on hover */
+.button:hover {
+  background-color: #ff0303;
+}
+
+/* Style the container for input and button */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px; /* Add left padding for spacing */
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: -20px; /* Add right margin for spacing */
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 340px; /* Align it to the top */
+  right: 210px; /* Align it to the left */
+}
+
+/* Style the input placeholders */
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.ambulancelogin-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 200px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+.button1 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.button1:hover {
+  background-color: #0056b3;
+}
+
+.ambulancehome-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 130px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.black-button1 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.black-button1:hover {
+  background-color: #0056b3;
+}
+
+.logoambulance{
+  position: fixed;
+  top: 50px;
+  max-width: 10%;
+  right: 350px;
+}
+
+h2 {
+  font-family: "Arial Rounded MT", sans-serif;
+  text-decoration: black;
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+  text-align: justify;
+  position: fixed;
+  top: 100px;
+  right: 350px;
+  font-weight: bold;  
+} 
+
+
+.ambulancetextlogo{
+  position: fixed;
+  top: 200px;
+  right: 350px;
+}
+
+
+.dropdown {
+  margin: 20px;
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 350px; /* Align it to the top */
+  right: 270px; /* Align it to the left */
+  margin: 20px;
+}
+
+/* Style the label for the dropdown */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style the select element (dropdown) */
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logoguest{
+  position: fixed;
+  top: 50px;
+  max-width: 10%;
+  right: 350px;
+}
+
+.guesttextlogo{
+  position: fixed;
+  top: 200px;
+  right: 390px;
+}
+
+
+.gps-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 200px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+.button3 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.button3:hover {
+  background-color: #0056b3;
+}
+
+.callforhelp-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 150px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; 
+}
+.button2 {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.button2:hover {
+  background-color: #0056b3;
+}
+
+
+.guesthome-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 100px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.black-button2 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.black-button2:hover {
+  background-color: #0056b3;
+}
+
+.hospitaltextlogo{
+  position: fixed;
+  top: 200px;
+  right: 370px;
+}
+
+.logohospital{
+  position: fixed;
+  top: 50px;
+  max-width: 10%;
+  right: 350px;
+}
+
+.hospitallogin-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 200px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+.button4 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.button4:hover {
+  background-color: #0056b3;
+}
+
+.hospitalhome-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 130px; /* Align it to the top */
+  right: 250px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.black-button3 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.black-button3:hover {
+  background-color: #0056b3;
+}
+
+.usertextlogo{
+  position: fixed;
+  font-size: 20px;
+  top: 5px;
+  right: 25px;
+
+}
+
+.logouser{
+  position: fixed;
+  top: 0px;
+  max-width: 5%;
+  right: 3px;
+}
+
+.userlogin-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 210px; /* Align it to the top */
+  right: 210px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+.button5 {
+
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #00dffc;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.button5:hover {
+  background-color: #fc0606;
+}
+
+.userhome-button {
+  position: absolute; /* Position the button absolutely within the header */
+  bottom: 170px; /* Align it to the top */
+  right: 210px; /* Align it to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.black-button4 {
+
+  display: block;
+  width: 280px;
+  padding: 10px;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the buttons on hover */
+.black-button4:hover {
+  background-color: #0056b3;
+}
+
+.ForgetPass {
+  position: absolute;
+  color: rgb(0, 0, 0); /* Link color */
+  text-decoration: none; /* Remove underline from the link */
+  font-weight: bold; /* Make the link bold */
+  bottom: 320px;
+  right: 480px;
+  display: flex;
+  font-size: 17px
+}
+

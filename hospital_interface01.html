@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_3.css">
+    <title>hospital Interface</title>
+</head>
+<body>
+    <img src="Images/medilift logo.png" class="hello1">
+    <img src="Images/hospitalicon1.png" class="hello03">
+    
+    <div class="home-button">
+        <a href="index.html" class="black-button">Index</a>
+    </div>
+    <div class="profile-button">
+      <a href="hospital_profile.php" class="black-button3">Profile</a>
+    </div>
+
+    <div class="leftContainer1">   
+      <input type="text" class="textbox" placeholder="location of emergency">
+      <input type="text" class="textbox" placeholder="type of emergency">
+      <input type="text" class="textbox" placeholder="no. of casualties">
+    </div>
+  
+    <div class="senddispatch-button">SEND DISPATCH</div>
+    <div class="forward-button">FORWARD</div>
+    <div class="black-button8" onclick="openPopup()">create room for EMERGENCY SERVICE</div>
+
+  <div class ="popup" id="popup">
+    <img src ="Images/call.png">
+    <h2>on call</h2>
+    
+    <div>
+      <input placeholder="Enter username..." type="text" id="username-input" /><br>
+    
+      <button onclick="sendUsername()">SEND</button>
+      <button onclick="startCall()">open ROOM</button>
+    </div>
+    
+    <div id="video-call-div">
+        <video id="local-video" autoplay></video>
+        <video id="remote-video" autoplay></video>
+        <div class="call-action-div">
+            <div class="btn3" onclick="muteAudio()">MUTE audio</div>
+            <div class="btn2" onclick="muteVideo()">MUTE video</div>
+            <div class="btn1" onclick="closePopup()">CUT</div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="./sender.js"></script>
+    <script>
+    let popup = document.getElementById("popup");
+    function openPopup()
+    {
+    popup.classList.add("open-popup");
+    }
+    function closePopup()
+    {
+    popup.classList.remove("open-popup");
+    }
+    </script>
+    
+  <h1 class="hospitaltoplogo"><center>Hospital Name</center></h1>
+  <h2 class="hospitallogo"><center>HOSPITAL</center></h2>
+
+  <div class="footer">
+      <div class="copyright">
+          &copy; Shadow Company 2023. All rights reserved.
+      </div>
+      <div class="terms">
+          <a href="terms.html">Terms and Conditions</a>
+      </div>
+  </div>
+</body>
+</html>

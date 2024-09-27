@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_3.css">
+    <title>Guest</title>
+</head>
+<body>
+    <img src="Images/medilift logo.png" class="hello1">
+    <img src="Images/guesticon.png" class="hello03">
+
+    <div class="home-button">
+        <a href="index.html" class="black-button">Index</a>
+    </div>
+
+    <div class="operatorButton" onclick="openPopup()">Call Ambulance</div>
+
+    <div class="black-button8" onclick="openPopup()">Call the HOTLINE TO GET EMERGENCY SERVICE</div>
+
+    <div class="container0111">
+        <form>
+            <input type="text" class="textbox" placeholder="Your location">
+            <input type="text" class="textbox" placeholder="Hospital's name">
+            <input type="text" class="textbox" placeholder="Driver's name">
+            <input type="text" class="textbox" placeholder="Estimated time">
+        </form>
+    </div>
+
+    <h1 class="usertoplogo3">Help is on the way, stay put!!</h1>
+    <h1 class="usertoplogo4"><center>Guest</center></h1>
+
+    <div class="popup" id="popup">
+        <img src="Images/call.png">
+        <h2>on call</h2>
+        <div>
+            <input placeholder="hotline is open" type="text" id="username-input" /><br>
+            <button onclick="joinCall()">Join Call</button>
+        </div>
+        <div id="video-call-div">
+            <video id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <div class="btn3" onclick="muteAudio()">MUTE audio</div>
+                <div class="btn2" onclick="muteVideo()">MUTE video</div>
+                <div class="btn1" onclick="cutCall()">CUT</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./receiver.js"></script>
+    <script>
+        let popup = document.getElementById("popup");
+        let initialPopup = popup.innerHTML; // Store the initial popup content
+
+        function openPopup() {
+            // Reset the popup to the initial state
+            popup.innerHTML = initialPopup;
+            popup.classList.add("open-popup");
+        }
+        
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        function cutCall() {
+            // Stop audio and video tracks
+            let localVideo = document.getElementById("local-video");
+            let remoteVideo = document.getElementById("remote-video");
+
+            if (localVideo.srcObject) {
+                localVideo.srcObject.getTracks().forEach((track) => track.stop());
+            }
+
+            if (remoteVideo.srcObject) {
+                remoteVideo.srcObject.getTracks().forEach((track) => track.stop());
+            }
+            
+            closePopup();
+        }
+    </script>
+
+    <div class="footer">
+        <div class="copyright">
+            &copy; Shadow Company 2023. All rights reserved.
+        </div>
+        <div class="terms">
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+    </div>
+</body>
+</html>

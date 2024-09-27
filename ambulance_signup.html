@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_3.css">
+    <title>AmbulanceSignUpForm</title>
+</head>
+<body>
+    <img src="Images/medilift logo.png" class="hello1">
+    <img src="Images/ambulanceicon.png" class="hello03">
+
+    <div class="home-button">
+        <a href="index.html" class="black-button">Home</a>
+    </div>
+
+    <h1 class="usertoplogo005"><center>Signup</center></h1>
+    <h2 class="usertoplogo001"><center>Ambulance</center></h2>
+
+    <div class="main-content">
+        <p class="toptext">Already Registered? <a href="user_login.html" class="active-link">Login</a></p>
+    </div>
+
+    <form action="ambulance_signup.php" method="POST">
+      <div class="nextButton">
+        <div class="leftContainer2">
+            <input type="text" class="textbox" id="Name" name="Name" placeholder="enter your name" required autocomplete="name">
+            <input type="text" class="textbox" id="email" name="email" placeholder="enter email" required autocomplete="email">
+            <input type="password" class="textbox" id="password" name="password" placeholder="enter password" required autocomplete="new-password">
+            <input type="password" class="textbox" id="confirm_password" placeholder="confirm password" name="confirm_password" required autocomplete="new-password">
+        </div>
+
+        <div class="rightContainer2">
+            <input type="text" class="textbox" id="address" name="address" placeholder="enter address & contact" required autocomplete="address">
+            <input type="text" class="textbox" id="national_id" placeholder="enter national ID" name="national_id" required>
+            <input type="text" class="textbox" id="license_number" placeholder="enter license number" name="license_number" required>
+            <input type="text" class="textbox" id="vehicle_type" placeholder="Type of vehicle" name="vehicle_type" required>
+        </div>
+
+        <input type="submit" class="black-button008" value="Signup">
+      </div>
+    </form>
+
+    <div class="footer">
+        <div class="copyright">
+            &copy; Shadow Company 2023. All rights reserved.
+        </div>
+        <div class="terms">
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+    </div>
+</body>
+</html>

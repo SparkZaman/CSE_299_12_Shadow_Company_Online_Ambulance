@@ -1,0 +1,62 @@
+/*...............................USER PROFILE................................*/
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.user-info {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular frame for the profile picture */
+  border: 3px solid #3498db;
+  background: rgb(0, 0, 0);
+  object-fit: cover;
+}
+
+.user-info {
+  text-align: left;
+  margin-left: 20px;
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: solid;
+  text-emphasis-style: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff2b2b;
+}
+
